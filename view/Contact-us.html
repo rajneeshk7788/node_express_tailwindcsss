@@ -3,20 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="output.css"/>
   </head>
-  <body>
-    <h1>Register Here Your data</h1>
-    <form action="/host" method="POST">
-      <input type="text" name="name" placeholder="Enter your name" required />
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
-    <a href="/">Go Home</a>
+  <body class="min-h-screen bg-gradient-to-br from-amber-50 to-amber-100">
+    <div class="container mx-auto px-4 py-16">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8">
+        <h1 class="text-3xl font-bold text-amber-700 text-center mb-8">Register Your Data</h1>
+        
+        <form action="/host" method="POST" class="space-y-6">
+          <div>
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Enter your name" 
+              required
+              class="w-full px-4 py-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-300"
+            />
+          </div>
+          
+          <div>
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email" 
+              required
+              class="w-full px-4 py-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-300"
+            />
+          </div>
+          
+          <button 
+            type="submit"
+            class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105"
+          >
+            Submit
+          </button>
+        </form>
+        
+        <div class="mt-6 text-center">
+          <a 
+            href="/" 
+            class="text-amber-600 hover:text-amber-700 font-medium transition duration-300"
+          >
+            Go Home
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
